@@ -5,10 +5,13 @@ import numpy as np
 # Initialize AI2-THOR Environment
 controller = ai2thor.controller.Controller(
     agentMode="default",
-    visibilityDistance=1.0,
+    # visibilityDistance=1.0,
     scene="FloorPlan1",
-    renderDepthImage=True,
-    renderInstanceSegmentation=True,
+    # renderDepthImage=True,
+    # renderInstanceSegmentation=True,
+    renderDepthImage=False,
+    renderInstanceSegmentation=False,
+    renderSemanticSegmentation=False,
     gridSize=0.25,
     width=640,
     height=480
